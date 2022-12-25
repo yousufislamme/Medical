@@ -1,0 +1,9 @@
+.fontStyle {
+   font-family: 'Montserrat';
+   font-weight: 800;
+}
+
+.bdImg {
+   background-image: url('../img/bg-tools.jpg');
+   background-size: cover;
+}
