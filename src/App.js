@@ -1,31 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import About from './components/About/About';
-import Hero from './components/Hero/Hero';
-import Clinic from './components/Clinic/Clinic';
-import Appointment from './components/Appointment/Appointment';
-import Service from './components/Service/Service';
-import AboutUs from './components/AboutUs/AboutUs';
-import Certified from './components/Certified/Certified';
-import Produces from './components/Produces/Produces';
-import Pricing from './components/Pricing/Pricing';
-import Footer from './components/Footer/Footer';
+import { Routes, Route } from 'react-router'
+import Home from './components/Links/Home';
+import Service from './components/Links/Service';
+import Doctors from './components/Links/Doctors';
+import Pages from './components/Links/Pages';
+import Contacts from './components/Links/Contacts';
+import About from './components/Links/About';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Clinic />
-      <Appointment />
-      <About />
-      <Service />
-      <AboutUs />
-      <Certified />
-      <Produces />
-      <Pricing />
-      <Footer />
 
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/service' element={<Service />} />
+        <Route path='/doctors' element={<Doctors />} />
+        <Route path='/pages' element={<Pages />} />
+        <Route path='/contacts' element={<Contacts />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
     </>
   );
 }

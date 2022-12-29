@@ -13,7 +13,7 @@ const Appointment = () => {
                      Make an <br />
                      Appointment
                   </h2>
-                  <p className='text-slate-700 py-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, placeat Lorem ipsum dolor sit amet.</p>
+                  <p className='text-slate-700 text-lg py-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, placeat Lorem ipsum dolor sit amet.</p>
                   <Button title="Choose Service" />
                </div>
                <div className="flex-1"></div>
