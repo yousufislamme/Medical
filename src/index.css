@@ -23,6 +23,7 @@ code {
     monospace;
 }
 
+
 .active {
   color: var(--primary-color);
 }

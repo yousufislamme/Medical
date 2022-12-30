@@ -6,6 +6,9 @@ import Doctors from './components/Links/Doctors';
 import Pages from './components/Links/Pages';
 import Contacts from './components/Links/Contacts';
 import About from './components/Links/About';
+import Blog from './components/Blog/Blog';
+import SinglePost from './components/Blog/SinglePost';
+
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
         <Route path='/pages' element={<Pages />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/about' element={<About />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/singlePost' element={<SinglePost />} />
       </Routes>
     </>
   );

@@ -9,6 +9,7 @@ import Certified from '../Certified/Certified';
 import Produces from '../Produces/Produces';
 import Pricing from '../Pricing/Pricing';
 import Footer from '../Footer/Footer';
+import Copyright from '../Footer/Copyright';
 
 const Home = () => {
    return (

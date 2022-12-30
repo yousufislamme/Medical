@@ -6,6 +6,8 @@ module.exports = {
       animation: {
         blob: "blob 4s infinite",
         yani: "yani 4s infinite",
+        heroAnimated: "heroAnimated 7s infinite",
+        easyAni: "heroAnimated 6s infinite",
 
       },
       keyframes: {
@@ -38,9 +40,37 @@ module.exports = {
             transform: "scale(1)",
           },
         },
+        heroAnimated: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "33%": {
+            transform: "translate(10px, 10px)",
+          },
+          "66%": {
+            transform: "translate(0, -20px)",
+          },
+          "100%": {
+            transform: "translate(0, 0)",
+          }
+        },
+        easyAni: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "33%": {
+            transform: "translate(0, 10px)",
+          },
+          "66%": {
+            transform: "translate(0, 20px)",
+          },
+          "100%": {
+            transform: "translate(0, 0)",
+          }
+        },
       },
 
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

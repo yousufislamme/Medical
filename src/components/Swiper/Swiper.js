@@ -16,32 +16,34 @@ export default function MySwiper() {
 
    return (
       <>
-         <Swiper
-            slidesPerView={3}
-            spaceBetween={10}
-            autoplay={{ delay: 1000 }}
-            pagination={{
-               clickable: true,
-            }}
-            modules={[Pagination, Autoplay]}
-            className="mySwiper "
-         >
-            <SwiperSlide>
-               <Testimonial />
-            </SwiperSlide>
-            <SwiperSlide>
-               <Testimonial />
-            </SwiperSlide>
-            <SwiperSlide>
-               <Testimonial />
-            </SwiperSlide>
-            <SwiperSlide>
-               <Testimonial />
-            </SwiperSlide>
-            <SwiperSlide>
-               <Testimonial />
-            </SwiperSlide>
-         </Swiper>
+         <div className="w-[1360px] xl:w-full mx-auto overflow-hidden">
+            <Swiper
+               slidesPerView={3}
+               spaceBetween={10}
+               // autoplay={{ delay: 1000 }}
+               pagination={{
+                  clickable: true,
+               }}
+               modules={[Pagination, Autoplay]}
+               className="mySwiper "
+            >
+               <SwiperSlide>
+                  <Testimonial />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <Testimonial />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <Testimonial />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <Testimonial />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <Testimonial />
+               </SwiperSlide>
+            </Swiper>
+         </div>
       </>
    );
 }

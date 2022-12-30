@@ -5,15 +5,15 @@ import manDoctor from '../../img/manDoctor.png'
 const Appointment = () => {
    return (
       <div className='bdImg'>
-         <div className="container mx-auto px-20 py-20 h-screen relative">
+         <div className="container mx-auto px-5 lg:px-20 py-20 h-screen relative">
 
             <div className="flex">
                <div className='flex-1 '>
-                  <h2 className='fontStyle text-[54px] text-slate-800 leading-[55px]'>
+                  <h2 className='fontStyle text-[44px] lg:text-[54px] text-slate-800 leading-[55px]'>
                      Make an <br />
                      Appointment
                   </h2>
-                  <p className='text-slate-700 text-lg py-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, placeat Lorem ipsum dolor sit amet.</p>
+                  <p className='text-slate-800 lg:text-slate-700 text-lg py-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, placeat Lorem ipsum dolor sit amet.</p>
                   <Button title="Choose Service" />
                </div>
                <div className="flex-1"></div>
@@ -40,7 +40,7 @@ const Appointment = () => {
 
             </div>
 
-            <div className='w-[170px] absolute bottom-0 left-[380px] bg-[#0014FF] px-5 py-10'>
+            <div className='hidden lg:block w-[170px] absolute bottom-0 left-[380px] bg-[#0014FF] px-5 py-10'>
                <h4 className='text-white font-bold text-xl'>Get more</h4>
                <p className='text-white'>information about clinic schedule</p>
             </div>
