@@ -8,8 +8,8 @@ const Service = () => {
          <div className="flex flex-row">
             {/* col-1 */}
             <div className="flex-1 xl:mt-[200px]">
-               <h2 className='text-[54px] fontStyle text-slate-700'>Services</h2>
-               <p className='text-slate-700 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione.</p>
+               <h2 className='text-[32px] sm:text-[44px] mb-5 lg:mb-0 lg:text-[54px] fontStyle text-slate-700'>Services</h2>
+               <p className='text-slate-700 text-lg lg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ratione.</p>
 
                <div className='m-3 rounded-tr-[30px] rounded-bl-[30px]'>
                   <img className='rounded-tr-[30px] rounded-bl-[30px]  ' src={DoctorServiceImage} alt="Photos" />

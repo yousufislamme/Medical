@@ -13,9 +13,9 @@ const SinglePost = () => {
             <div>
                <img src={BigImg} alt="Big Images" />
             </div>
-            <div className='container mx-auto px-44'>
+            <div className='container mx-auto px-5 lg:px-44'>
 
-               <PostItem ff="monospace" size="54px" height="60px" post="Lorem ipsum dolor sit amet consectetur adipisicing elit." date="Feb, 15, 2023" p="10px 0" />
+               <PostItem ff="monospace" height="60px" post="Lorem ipsum dolor sit amet consectetur adipisicing elit." date="Feb, 15, 2023" p="10px 0" />
 
                <p className='text-lg leading-8 text-slate-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam quos autem itaque voluptas voluptatibus placeat delectus repellat commodi repudiandae? Iure eos enim et autem quas, earum sed doloremque a ipsum libero distinctio, nisi repudiandae? Non nobis eos accusamus in illum expedita a quisquam quaerat nesciunt! A quam molestias cum!</p>
 
@@ -39,14 +39,14 @@ const SinglePost = () => {
                <br />
                <p className='text-lg text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sunt! Ratione consectetur eius officiis reprehenderit possimus minima dicta obcaecati eum voluptatibus. Tempore facilis eum mollitia veniam at voluptatum consequuntur, vel accusamus alias?</p>
 
-               <div className='mt-20'>
+               <div className='my-20'>
                   <h2 className='text-[34px] text-bold'>Leave a Reaply</h2>
 
                   <div className='flex flex-col justify-center '>
                      <label className="label">
                         <span className="label-text">Comment</span>
                      </label>
-                     <textarea className="px-5 py-2 text-lg w-[600px] h-[200px] rounded-xl border-2 focus:outline-none  focus:ring focus:ring-blue-600" placeholder="Bio"></textarea>
+                     <textarea className="px-5 py-2 text-lg w-full lg:w-[600px] h-[200px] rounded-xl border-2 focus:outline-none  focus:ring focus:ring-blue-600" placeholder="Bio"></textarea>
                      <div className='mt-4'>
                         <Button title="Post Comment" />
                      </div>

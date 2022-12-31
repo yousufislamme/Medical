@@ -16,11 +16,11 @@ export default function MySwiper() {
 
    return (
       <>
-         <div className="w-[1360px] xl:w-full mx-auto overflow-hidden">
+         <div>
             <Swiper
                slidesPerView={3}
                spaceBetween={10}
-               // autoplay={{ delay: 1000 }}
+               autoplay={{ delay: 1000 }}
                pagination={{
                   clickable: true,
                }}

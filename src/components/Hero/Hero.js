@@ -9,13 +9,13 @@ export default function Hero() {
       <div className='bg-gradient-to-b from-indigo-100'>
          <div className="container px-5 lg:px-20 py-20 mx-auto">
             <div className='flex flex-col-reverse lg:flex-row items-center '>
-               <div className="flex-1 text-center lg:text-left">
-                  <h2 className="text-[44px] lg:text-[65px] text-[#0014FF] leading-[65px] fontStyle">Find a doctor & book online</h2>
+               <div className="flex-1 mt-5 text-center lg:text-left">
+                  <h2 className="text-[34px] leading-9 sm:text-[54px] sm:leading-[50px] lg:text-[65px] text-[#0014FF] lg:leading-[65px] fontStyle">Find a doctor & book online</h2>
                   <p className='text-slate-600 text-lg py-7 pr-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, mollitia libero? Quia, mollitia incidunt quas in exercitationem veniam minima quibusdam.</p>
                   <Button title="Make an Appointment" />
                   {/* box */}
-                  <div className='mt-20 flex flex-col lg:flex-row gap-7'>
 
+                  <div className='mt-20 flex flex-col sm:flex-row lg:flex-row gap-7'>
                      {/* box */}
                      <div className='border-2 rounded-tl-[20px] rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
                         <h3 className='text-[18px] lg:text-[22px] font-semibold'>Our Service</h3>

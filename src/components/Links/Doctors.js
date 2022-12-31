@@ -8,12 +8,12 @@ const Doctors = () => {
    return (
       <>
          <Navbar />
-         <div className="container mx-auto px-20 py-20">
+         <div className="container mx-auto px-5 lg:px-20 py-20">
 
 
             <TitleDesc title="Doctors" desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
                <DrItem img={DrImg} name="Dr. AK Harun" type="Dentist" experience="I have 5 years of experience" />
                <DrItem img={DrImg} name="Dr. AK Harun" type="Dentist" experience="I have 5 years of experience" />
                <DrItem img={DrImg} name="Dr. AK Harun" type="Dentist" experience="I have 5 years of experience" />

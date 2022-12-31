@@ -3,20 +3,20 @@ import HealthItem from './HealthItem'
 
 const AboutTime = () => {
    return (
-      <div className='container mx-auto px-20'>
+      <div className='container mx-auto px-5 lg:px-20'>
          <div>
-            <h2 className='fontStyle text-[54px] leading-[60px]'>Facts About</h2>
-            <h2 className='fontStyle text-[54px] leading-[60px] text-[#0014FF]'>Dentino</h2>
+            <h2 className='fontStyle text-[32px] leading-[50px] sm:text-[54px] sm:leading-[60px]'>Facts About</h2>
+            <h2 className='fontStyle text-[32px] leading-[50px] sm:text-[54px] sm:leading-[60px] text-[#0014FF]'>Dentino</h2>
          </div>
          {/* item */}
-         <div className="grid grid-cols-4 mt-10">
+         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10">
             <HealthItem name="Basic Service" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio!" />
             <HealthItem name="Basic Service" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio!" />
             <HealthItem name="Basic Service" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio!" />
             <HealthItem name="Basic Service" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio!" />
          </div>
 
-         <div className="flex">
+         <div className="flex flex-col lg:flex-row">
             <div className="flex-1">
 
             </div>

@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from './logo.svg'
-import Clock from './../../icons/clock-five.svg';
-import Map from './../../icons/marker.svg';
-import Phone from './../../icons/phone-call.svg';
 import { NavLink } from 'react-router-dom';
 import PhoneWhite from './../../icons/phoneWhite.svg';
 
 const Nav = () => {
 
+   const [toggleMenu, SetToggleMenu] = useState(false);
+   const toggleNav = () => {
+      SetToggleMenu(!toggleMenu);
+   }
 
 
    return (
@@ -30,6 +31,42 @@ const Nav = () => {
                   </div>
                </div>
 
+
+               <div className='md:hidden relative'>
+                  <button onClick={toggleNav}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" /></svg></button>
+
+
+               </div>
+
+               {toggleMenu && (
+                  <div className='absolute top-[62px] right-0 w-full flex justify-center py-10 backdrop-blur-md rounded-br-[20px] rounded-bl-[20px] border-b-4 border-b-blue-700 bg-white/30 z-50 md:hidden'>
+                     <ul className='flex flex-col justify-center'>
+
+                        <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/'>Home</NavLink></li>
+                        <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/service'>Service</NavLink></li>
+                        <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/doctors'>Doctors</NavLink></li>
+                        <li className='mr-5 font-semibold leading-[30px]'>
+                           <NavLink to='/pages'>
+                              <div className="dropdown dropdown-hover ">
+                                 <label tabIndex={0} className="flex">Pages
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" /></svg>
+                                    </span>
+                                 </label>
+                                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><NavLink to='/blog' >Blog</NavLink></li>
+                                    <li><NavLink to='/singlePost' >Single Post</NavLink></li>
+                                 </ul>
+                              </div>
+                           </NavLink></li>
+                        <li className='mr-5 font-semibold leading-[30px]'>
+                           <NavLink to='/contacts'>Contacts</NavLink></li>
+                        <li className='mr-5 font-semibold leading-[30px]'>
+                           <NavLink to='/about'>About</NavLink></li>
+                        <li className='mr-5 font-semibold leading-[30px]'></li>
+                     </ul>
+                  </div>
+               )}
+
             </div>
             <hr />
 
@@ -37,10 +74,10 @@ const Nav = () => {
             <div className='hidden lg:flex justify-between items-center py-2 border-b-2'>
                <ul className='flex'>
 
-                  <li className='mr-5 font-semibold '><NavLink to='/'>Home</NavLink></li>
-                  <li className='mr-5 font-semibold '><NavLink to='/service'>Service</NavLink></li>
-                  <li className='mr-5 font-semibold '><NavLink to='/doctors'>Doctors</NavLink></li>
-                  <li className='mr-5 font-semibold '>
+                  <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/'>Home</NavLink></li>
+                  <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/service'>Service</NavLink></li>
+                  <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/doctors'>Doctors</NavLink></li>
+                  <li className='mr-5 font-semibold leading-[30px]'>
                      <NavLink to='/pages'>
                         <div className="dropdown dropdown-hover ">
                            <label tabIndex={0} className="flex">Pages
@@ -53,11 +90,11 @@ const Nav = () => {
                            </ul>
                         </div>
                      </NavLink></li>
-                  <li className='mr-5 font-semibold '>
+                  <li className='mr-5 font-semibold leading-[30px]'>
                      <NavLink to='/contacts'>Contacts</NavLink></li>
-                  <li className='mr-5 font-semibold '>
+                  <li className='mr-5 font-semibold leading-[30px]'>
                      <NavLink to='/about'>About</NavLink></li>
-                  <li className='mr-5 font-semibold '></li>
+                  <li className='mr-5 font-semibold leading-[30px]'></li>
                </ul>
                <div>
                   <a href="tel:123" className='flex bg-[#0014FF] text-white px-[20px] py-[10px] rounded-full'><img className='w-[20px] mr-3' src={PhoneWhite} alt="Phone" /> + 123 3344 5555</a>

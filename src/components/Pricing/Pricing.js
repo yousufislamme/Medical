@@ -16,22 +16,22 @@ const Pricing = () => {
    }
 
    return (
-      <div className='container mx-auto px-20 my-32'>
+      <div className='container mx-auto px-5 lg:px-20 py-32 bg-slate-100'>
          <div className='text-center'>
-            <h2 className='fontStyle leading-[60px] text-[54px] text-[#0014FF]'>Dentino Clinic</h2>
-            <h2 className='fontStyle leading-[60px] text-[54px]'>Pricing Plans</h2>
+            <h2 className='fontStyle leading-9 lg:leading-[60px] text-[32px] lg:text-[54px] text-[#0014FF]'>Dentino Clinic</h2>
+            <h2 className='fontStyle leading-9 lg:leading-[60px] text-[32px] lg:text-[54px]'>Pricing Plans</h2>
          </div>
-         <div className='grid grid-cols-3 mt-20 w-[80%] mx-auto'>
+         <div className='grid grid-cols-1 lg:grid-cols-3 mt-20 w-full xl:w-[80%] mx-auto'>
 
-            <div className=''>
+            <div className='py-5'>
 
                <Price {...priceInfo} />
             </div>
-            <div className=''>
+            <div className='py-5'>
 
                <WhitePrice {...priceInfo} price='$150' title='Doctor Visits' />
             </div>
-            <div className=''>
+            <div className='py-5'>
 
                <Price {...priceInfo} price='$250' title='Urgent Care' />
             </div>

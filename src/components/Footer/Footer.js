@@ -5,11 +5,11 @@ import Copyright from './Copyright'
 const Footer = () => {
    return (
       <>
-         <div className="mt-44">
+         <div>
             <div className='bg-blue-50 py-20'>
-               <div className='container mx-auto px-20 '>
-                  <div className="grid grid-cols-2">
-                     <div className="bg-white mx-14 px-10 py-20 rounded-tr-[50px] rounded-bl-[50px] mt-[-150px] shadow-lg">
+               <div className='container mx-auto px-5 lg:px-20 '>
+                  <div className="grid grid-cols-1 lg:grid-cols-2">
+                     <div className="hidden lg:block bg-white mx-14 px-10 py-20 rounded-tr-[50px] rounded-bl-[50px] mt-[-150px] shadow-lg">
                         <div className='w-[50px] flex items-center'>
                            <img src={Logo} alt="Logo" />
                            <h2 className='font-extrabold text-blue-900 ml-[-5px] text-xl'>Dentino</h2>

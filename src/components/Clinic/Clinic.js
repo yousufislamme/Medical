@@ -8,13 +8,13 @@ const Clinic = () => {
       <div>
          <div className="container px-5 lg:px-20 mx-auto">
             <div className=' text-center mb-[50px]'>
-               <h2 className='font-extrabold text-[32px] lg:text-[54px] leading-[60px] text-[#0014FF] fontStyle'>Dention</h2>
-               <h2 className='font-extrabold text-[32px] lg:text-[54px] leading-[60px] text-slate-700 fontStyle'>Profession Clinic</h2>
+               <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-[#0014FF] fontStyle'>Dention</h2>
+               <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-slate-700 fontStyle'>Profession Clinic</h2>
             </div>
             <div className='flex flex-col-reverse lg:flex-row'>
                <div className='w-[100%] lg:w-[40%] flex flex-col items-start justify-center'>
                   <h2 className='text-[28px] font-semibold lg:pr-10'>Caring Health is Important Than All</h2>
-                  <p className='my-5 lg:pr-10 text-slate-700 text-[22px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit non quisquam provident sapiente omnis nostrum, animi assumenda, fugiat numquam aperiam veniam doloribus, similique minima saepe.</p>
+                  <p className='my-5 lg:pr-10 text-slate-700 text-sm leading-6 lg:text-[22px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit non quisquam provident sapiente omnis nostrum, animi assumenda, fugiat numquam aperiam veniam doloribus, similique minima saepe.</p>
                   <a href="#">
                      <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_11_13)">
