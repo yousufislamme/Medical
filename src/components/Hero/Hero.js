@@ -9,7 +9,7 @@ import HeroImage from './../../img/doctor.jpg'
 export default function Hero() {
 
    return (
-      <div className='bg-gradient-to-b from-indigo-100'>
+      <div className='bg-gradient-to-b from-indigo-100 overflow-hidden'>
          <div className="container px-5 lg:px-20 py-20 mx-auto">
             <div className='flex flex-col-reverse lg:flex-row items-center '>
                <div className="flex-1 mt-5 text-center lg:text-left relative">
