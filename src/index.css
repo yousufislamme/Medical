@@ -27,3 +27,7 @@ code {
 .active {
   color: var(--primary-color);
 }
+
+.hover\:bg-slate-100.active {
+  background: #e2e8f0;
+}

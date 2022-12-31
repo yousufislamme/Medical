@@ -46,18 +46,9 @@ const Nav = () => {
                         <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/service'>Service</NavLink></li>
                         <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/doctors'>Doctors</NavLink></li>
                         <li className='mr-5 font-semibold leading-[30px]'>
-                           <NavLink to='/pages'>
-                              <div className="dropdown dropdown-hover ">
-                                 <label tabIndex={0} className="flex">Pages
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" /></svg>
-                                    </span>
-                                 </label>
-                                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                    <li><NavLink to='/blog' >Blog</NavLink></li>
-                                    <li><NavLink to='/singlePost' >Single Post</NavLink></li>
-                                 </ul>
-                              </div>
-                           </NavLink></li>
+                           <li><NavLink to='/blog' >Blog</NavLink></li>
+                           <li><NavLink to='/singlePost' >Single Post</NavLink></li>
+                           <NavLink to='/#'></NavLink></li>
                         <li className='mr-5 font-semibold leading-[30px]'>
                            <NavLink to='/contacts'>Contacts</NavLink></li>
                         <li className='mr-5 font-semibold leading-[30px]'>
@@ -71,25 +62,25 @@ const Nav = () => {
             <hr />
 
             {/* Navbar */}
-            <div className='hidden lg:flex justify-between items-center py-2 border-b-2'>
+            <div className='hidden md:flex justify-between items-center py-2 border-b-2'>
                <ul className='flex'>
 
                   <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/'>Home</NavLink></li>
                   <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/service'>Service</NavLink></li>
                   <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/doctors'>Doctors</NavLink></li>
                   <li className='mr-5 font-semibold leading-[30px]'>
-                     <NavLink to='/pages'>
-                        <div className="dropdown dropdown-hover ">
-                           <label tabIndex={0} className="flex">Pages
-                              <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" /></svg>
-                              </span>
-                           </label>
-                           <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                              <li><NavLink to='/blog' >Blog</NavLink></li>
-                              <li><NavLink to='/singlePost' >Single Post</NavLink></li>
-                           </ul>
-                        </div>
-                     </NavLink></li>
+
+                     <div className="dropdown dropdown-end  ">
+                        <label tabIndex={0} className="flex items-center">Pages
+                           <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" /></svg>
+                           </span>
+                        </label>
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                           <li><NavLink className="hover:bg-slate-100" to='/blog' >Blog</NavLink></li>
+                           <li><NavLink className="hover:bg-slate-100" to='/singlePost' >Single Post</NavLink></li>
+                        </ul>
+                     </div>
+                  </li>
                   <li className='mr-5 font-semibold leading-[30px]'>
                      <NavLink to='/contacts'>Contacts</NavLink></li>
                   <li className='mr-5 font-semibold leading-[30px]'>

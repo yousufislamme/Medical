@@ -11,7 +11,7 @@ const Blog = () => {
    return (
       <>
          <Navbar />
-         <div className="container mx-auto px-5 py-5 lg:p-20">
+         <div className="container mx-auto px-5 py-5 lg:p-20 overflow-hidden">
             <TitleDesc title='Archive' desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-20'>

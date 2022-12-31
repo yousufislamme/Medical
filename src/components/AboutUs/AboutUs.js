@@ -8,7 +8,7 @@ import SwiperForMobileTwo from '../Swiper/SwiperForMobileTwo';
 const AboutUs = () => {
    return (
       <div>
-         <div className="container mx-auto px-5 lg:px-20">
+         <div className="container mx-auto px-5 lg:px-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-5">
                <div className="flex w-full rounded-tr-[50px]">
 

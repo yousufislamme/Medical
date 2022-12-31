@@ -12,7 +12,7 @@ const About = () => {
    return (
       <>
          <Navbar />
-         <div className='container mx-auto px-5 lg:px-20 py-20'>
+         <div className='container mx-auto px-5 lg:px-20 py-20 overflow-hidden'>
             {/* title */}
             <TitleDesc title="About" desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
 

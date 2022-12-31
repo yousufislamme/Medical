@@ -7,7 +7,7 @@ const Contacts = () => {
    return (
       <>
          <Navbar />
-         <div className="container mx-auto px-5 lg:px-20 pt-20">
+         <div className="container mx-auto px-5 lg:px-20 pt-20 overflow-hidden">
             <TitleDesc title="Contact" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil perferendis aliquid modi facilis consequuntur nam dolore! Aliquid laboriosam est, omnis atque ab facilis fugit!" />
 
             <div className='my-20'>
