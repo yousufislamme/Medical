@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Logo from './logo.svg'
 import { NavLink } from 'react-router-dom';
 import PhoneWhite from './../../icons/phoneWhite.svg';
+import { motion } from 'framer-motion';
 
 const Nav = () => {
 
@@ -33,13 +34,20 @@ const Nav = () => {
 
 
                <div className='md:hidden relative'>
-                  <button onClick={toggleNav}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" /></svg></button>
-
-
+                  <button onClick={toggleNav}>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z" /><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" /></svg>
+                  </button>
                </div>
 
                {toggleMenu && (
-                  <div className='absolute top-[62px] right-0 w-full flex justify-center py-10 backdrop-blur-md rounded-br-[20px] rounded-bl-[20px] border-b-4 border-b-blue-700 bg-white/30 z-50 md:hidden'>
+                  <motion.div
+                     initial={{ y: -100 }}
+                     whileInView={{ y: 0 }}
+                     transition={{ type: "spring", stiffness: 50, duration: 1 }}
+                     viewport={{ once: true }}
+
+
+                     className='absolute top-[62px] right-0 w-full flex justify-center py-10 backdrop-blur-md rounded-br-[20px] rounded-bl-[20px] border-b-4 border-b-blue-700 bg-white/30 z-50 md:hidden'>
                      <ul className='flex flex-col justify-center'>
 
                         <li className='mr-5 font-semibold leading-[30px]'><NavLink to='/'>Home</NavLink></li>
@@ -55,7 +63,7 @@ const Nav = () => {
                            <NavLink to='/about'>About</NavLink></li>
                         <li className='mr-5 font-semibold leading-[30px]'></li>
                      </ul>
-                  </div>
+                  </motion.div>
                )}
 
             </div>

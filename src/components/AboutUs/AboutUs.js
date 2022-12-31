@@ -3,6 +3,7 @@ import MySwiper from '../Swiper/Swiper';
 import Sui from '../../img/sui.png'
 import SwiperForMobile from '../Swiper/SwiperForMobile';
 import SwiperForMobileTwo from '../Swiper/SwiperForMobileTwo';
+import { motion } from 'framer-motion';
 
 
 const AboutUs = () => {
@@ -18,10 +19,16 @@ const AboutUs = () => {
 
                </div>
                <div className="w-full flex flex-col ">
-                  <div>
+                  <motion.div
+                     initial={{ x: -50, opacity: 0 }}
+                     whileInView={{ x: 1, opacity: 1 }}
+                     transition={{ ease: "anticipate", duration: 1 }}
+                     viewport={{ once: true }}
+
+                  >
                      <h2 className='fontStyle text-[34px] sm:text-[44px] sm:leading-[50px] lg:text-[54px]'>Our Patient</h2>
                      <h2 className='fontStyle text-[34px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] text-[#0014FF]'>About US</h2>
-                  </div>
+                  </motion.div>
                   <div className='h-20 py-[20px] mb-20 lg:mb-0'>
                      <p className='text-sm sm:pt-5 lg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure debitis asperiores, itaque a exercitationem maxime, eius voluptas quae expedita sit alias, eos pariatur illum!</p>
                   </div>

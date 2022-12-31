@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import '.././index.css'
 import DoctorPhoto from './../../img/doctorPhoto.png'
@@ -7,14 +8,31 @@ const Clinic = () => {
 
       <div>
          <div className="container px-5 lg:px-20 mx-auto">
-            <div className=' text-center mb-[50px]'>
+            <motion.div
+               initial={{ y: 50 }}
+               whileInView={{ y: 1 }}
+               transition={{ type: "spring", stiffness: 50, duration: 2 }}
+               viewport={{ once: true }}
+
+               className=' text-center mb-[50px]'>
                <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-[#0014FF] fontStyle'>Dention</h2>
                <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-slate-700 fontStyle'>Profession Clinic</h2>
-            </div>
+            </motion.div>
             <div className='flex flex-col-reverse lg:flex-row'>
                <div className='w-[100%] lg:w-[40%] flex flex-col items-start justify-center'>
-                  <h2 className='text-[28px] font-semibold lg:pr-10'>Caring Health is Important Than All</h2>
-                  <p className='my-5 lg:pr-10 text-slate-700 text-sm leading-6 lg:text-[22px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit non quisquam provident sapiente omnis nostrum, animi assumenda, fugiat numquam aperiam veniam doloribus, similique minima saepe.</p>
+                  <motion.h2
+                     initial={{ y: 20, opacity: 0 }}
+                     whileInView={{ y: 1, opacity: 1 }}
+                     transition={{ ease: "anticipate", duration: 1 }}
+                     viewport={{ once: true }}
+
+                     className='text-[28px] font-semibold lg:pr-10'>Caring Health is Important Than All</motion.h2>
+                  <motion.p
+                     initial={{ y: 20, opacity: 0 }}
+                     whileInView={{ y: 1, opacity: 1 }}
+                     transition={{ ease: "anticipate", duration: 2 }}
+                     viewport={{ once: true }}
+                     className='my-5 lg:pr-10 text-slate-700 text-sm leading-6 lg:text-[22px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit non quisquam provident sapiente omnis nostrum, animi assumenda, fugiat numquam aperiam veniam doloribus, similique minima saepe.</motion.p>
                   <a href="#">
                      <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_11_13)">
@@ -29,9 +47,15 @@ const Clinic = () => {
                   </a>
                </div>
 
-               <div className='flex-1 mb-10'>
+               <motion.div
+                  initial={{ x: 100, opacity: 0, scale: 0.7 }}
+                  whileInView={{ x: 1, opacity: 1, scale: 1 }}
+                  transition={{ ease: "anticipate", duration: 2 }}
+                  viewport={{ once: true }}
+
+                  className='flex-1 mb-10'>
                   <img src={DoctorPhoto} alt="DoctorPhoto" />
-               </div>
+               </motion.div>
 
             </div>
 

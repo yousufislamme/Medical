@@ -3,12 +3,22 @@ import Navbar from '../Navbar/Navbar'
 import TitleDesc from '../TitleDesc'
 import Button from '../Button/Button'
 import Footer from '../Footer/Footer'
+import { motion } from 'framer-motion'
+
+
 const Contacts = () => {
    return (
       <>
          <Navbar />
          <div className="container mx-auto px-5 lg:px-20 pt-20 overflow-hidden">
-            <TitleDesc title="Contact" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil perferendis aliquid modi facilis consequuntur nam dolore! Aliquid laboriosam est, omnis atque ab facilis fugit!" />
+            <motion.div
+               initial={{ y: -200 }}
+               whileInView={{ y: 1 }}
+               transition={{ easy: "anticipate", duration: 1 }}
+               viewport={{ once: true }}
+            >
+               <TitleDesc title="Contact" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil perferendis aliquid modi facilis consequuntur nam dolore! Aliquid laboriosam est, omnis atque ab facilis fugit!" />
+            </motion.div>
 
             <div className='my-20'>
                <iframe title='Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29203.989511024818!2d90.39112229584319!3d23.800859607046323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7abd941ed15%3A0xf151df4e4e9c047c!2sUnited%20Hospital%20Limited!5e0!3m2!1sen!2sbd!4v1672403003336!5m2!1sen!2sbd" width="100%" height="500"></iframe>

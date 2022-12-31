@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Button/Button'
 import manDoctor from '../../img/manDoctor.png'
+import { motion } from 'framer-motion'
 
 const Appointment = () => {
    return (
@@ -9,10 +10,19 @@ const Appointment = () => {
 
             <div className="flex">
                <div className='flex-1 '>
-                  <h2 className='fontStyle text-[32px] sm:text-[44px] lg:text-[54px] text-slate-800 lg:leading-[55px]'>
+                  <motion.h2
+                     initial={{ y: 50 }}
+                     whileInView={{ y: 1 }}
+                     transition={{
+                        delay: 0.5,
+                        x: { duration: 1 },
+                        default: { ease: "linear" }
+                     }}
+                     viewport={{ once: true }}
+                     className='fontStyle text-[32px] sm:text-[44px] lg:text-[54px] text-slate-800 lg:leading-[55px]'>
                      Make an <br />
                      Appointment
-                  </h2>
+                  </motion.h2>
                   <p className='text-slate-800 lg:text-slate-700 text-sm lg:text-lg py-10'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, placeat Lorem ipsum dolor sit amet.</p>
                   <Button title="Choose Service" />
                </div>

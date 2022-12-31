@@ -1,14 +1,21 @@
 import React from 'react'
 import DrItem from './DrItem'
 import DrImage from '../../img/doctor.jpg'
+import { motion } from 'framer-motion'
+
 
 const Certified = () => {
    return (
       <div className='container mx-auto px-5 lg:px-20'>
-         <div className="text-center">
+         <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ ease: "anticipate", duration: 1 }}
+
+            className="text-center">
             <h2 className='text-[34px] sm:text-[44px] ms:leading-[50px] lg:text-[54px] lg:leading-9 lg:leading-[60px] text-slate-700 fontStyle'>Certified</h2>
             <h2 className='text-[34px] sm:text-[44px] ms:leading-[50px] lg:text-[54px] lg:leading-9 lg:leading-[60px] text-[#0014FF] fontStyle'>Dentists</h2>
-         </div>
+         </motion.div>
 
          <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4'>
             <div>

@@ -7,6 +7,8 @@ import Counter from '../About/Counter'
 import BlogItem from '../BlogItem'
 import Footer from '../Footer/Footer'
 import TitleDesc from '../TitleDesc'
+import { motion } from 'framer-motion'
+
 
 const About = () => {
    return (
@@ -14,7 +16,15 @@ const About = () => {
          <Navbar />
          <div className='container mx-auto px-5 lg:px-20 py-20 overflow-hidden'>
             {/* title */}
-            <TitleDesc title="About" desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
+            <motion.div
+               initial={{ y: -200 }}
+               whileInView={{ y: 1 }}
+               transition={{ easy: "anticipate", duration: 1 }}
+               viewport={{ once: true }}
+            >
+
+               <TitleDesc title="About" desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
+            </motion.div>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-10'>
                <div className='flex justify-center lg:justify-end pr-4'>

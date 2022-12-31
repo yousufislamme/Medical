@@ -1,3 +1,4 @@
+import { delay, motion } from 'framer-motion'
 import React from 'react'
 import HealthItem from './HealthItem'
 
@@ -5,8 +6,18 @@ const AboutTime = () => {
    return (
       <div className='container mx-auto px-5 lg:px-20'>
          <div>
-            <h2 className='fontStyle text-[32px] leading-[50px] sm:text-[54px] sm:leading-[60px]'>Facts About</h2>
-            <h2 className='fontStyle text-[32px] leading-[50px] sm:text-[54px] sm:leading-[60px] text-[#0014FF]'>Dentino</h2>
+            <motion.h2
+               initial={{ y: -50, opacity: 0 }}
+               whileInView={{ y: 1, opacity: 1 }}
+               transition={{ easy: "anticipate", duration: 1, delay: 1 }}
+               viewport={{ once: true }}
+               className='fontStyle text-[32px] leading-[50px] sm:text-[54px] sm:leading-[60px]'>Facts About</motion.h2>
+            <motion.h2
+               initial={{ y: -50, opacity: 0 }}
+               whileInView={{ y: 1, opacity: 1 }}
+               transition={{ easy: "anticipate", duration: 1, delay: 2 }}
+               viewport={{ once: true }}
+               className='fontStyle text-[32px] leading-[50px] sm:text-[54px] sm:leading-[60px] text-[#0014FF]'>Dentino</motion.h2>
          </div>
          {/* item */}
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10">

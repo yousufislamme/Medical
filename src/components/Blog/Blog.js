@@ -6,13 +6,23 @@ import TitleDesc from '../TitleDesc'
 import DrMan from '../../img/DrMan.png'
 import PostItem from './PostItem'
 import Tag from './Tag'
+import { motion } from 'framer-motion'
 
 const Blog = () => {
+
    return (
+
       <>
          <Navbar />
          <div className="container mx-auto px-5 py-5 lg:p-20 overflow-hidden">
-            <TitleDesc title='Archive' desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
+            <motion.div
+               initial={{ y: -200 }}
+               whileInView={{ y: 1 }}
+               transition={{ easy: "anticipate", duration: 1 }}
+               viewport={{ once: true }}
+            >
+               <TitleDesc title='Archive' desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
+            </motion.div>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-20'>
                <div>
@@ -36,9 +46,9 @@ const Blog = () => {
                   <div className="my-5 hidden lg:block">
 
                      <h2 className='text-2xl text-blue-800 font-bold'>Latest Posts</h2>
-                     <PostItem post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
-                     <PostItem post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
-                     <PostItem post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
+                     <PostItem fontSize="24px" post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
+                     <PostItem fontSize="24px" post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
+                     <PostItem fontSize="24px" post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
                   </div>
                   <div>
                      <h2 className='text-2xl text-blue-800 font-bold'>Tag</h2>
