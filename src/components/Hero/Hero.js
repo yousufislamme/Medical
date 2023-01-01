@@ -9,7 +9,7 @@ import HeroImage from './../../img/doctor.jpg'
 export default function Hero() {
 
    return (
-      <div className='bg-gradient-to-b from-indigo-100 overflow-hidden'>
+      <div className='bg-gradient-to-b from-indigo-100 dark:from-slate-900 overflow-hidden'>
          <div className="container px-5 lg:px-20 py-20 mx-auto">
             <div className='flex flex-col-reverse lg:flex-row items-center '>
                <div className="flex-1 mt-5 text-center lg:text-left relative">
@@ -24,21 +24,21 @@ export default function Hero() {
                      transition={{ ease: "anticipate", duration: 1 }}
                      viewport={{ once: true }}
 
-                     className="text-[34px] leading-9 sm:text-[54px] sm:leading-[50px] lg:text-[65px] text-[#0014FF] lg:leading-[65px] fontStyle">Find a doctor & book online</motion.h2>
+                     className="text-[34px] leading-9 sm:text-[54px] sm:leading-[50px] lg:text-[65px] text-[#0014FF] lg:leading-[65px] fontStyle dark:text-slate-50">Find a doctor & book online</motion.h2>
                   <motion.p
                      initial={{ y: 20 }}
                      whileInView={{ y: 1 }}
                      transition={{ ease: "anticipate", duration: 2 }}
                      viewport={{ once: true }}
-                     className='text-slate-600 text-lg py-7 pr-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, mollitia libero? Quia, mollitia incidunt quas in exercitationem veniam minima quibusdam.</motion.p>
+                     className='text-slate-600 text-lg py-7 pr-5 dark:text-slate-300'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, mollitia libero? Quia, mollitia incidunt quas in exercitationem veniam minima quibusdam.</motion.p>
                   <Button title="Make an Appointment" />
                   {/* box */}
 
                   <div className='mt-20 flex flex-col sm:flex-row lg:flex-row gap-7'>
                      {/* box */}
-                     <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
-                        <h3 className='text-[18px] lg:text-[22px] font-semibold'>Our Service</h3>
-                        <p className='mt-'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                     <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30  dark:bg-black/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
+                        <h3 className='text-[18px] lg:text-[22px] font-semibold dark:text-slate-200'>Our Service</h3>
+                        <p className='dark:text-slate-300'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                         <div className='absolute bottom-[]'>
                            <div className='flex justify-center items-center w-[40px] h-[40px] rounded-full bg-[#0014FF] mt-2'>
                               <svg width="249" height="249" viewBox="0 0 249 249" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,9 +57,9 @@ export default function Hero() {
                      </div>
 
                      {/* box */}
-                     <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
-                        <h3 className='text-[18px] lg:text-[22px] font-semibold'>Our Center</h3>
-                        <p className='mt-'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                     <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30 dark:bg-black/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
+                        <h3 className='text-[18px] lg:text-[22px] font-semibold dark:text-slate-200'>Our Center</h3>
+                        <p className='dark:text-slate-300'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                         <div className='absolute bottom-[]'>
                            <div className='flex justify-center items-center w-[40px] h-[40px] rounded-full bg-[#0014FF] mt-2'>
                               <svg width="249" height="249" viewBox="0 0 249 249" fill="none" xmlns="http://www.w3.org/2000/svg">

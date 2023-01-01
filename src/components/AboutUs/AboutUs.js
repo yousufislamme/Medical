@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const AboutUs = () => {
    return (
-      <div>
+      <div className='xl:dark:pt-20'>
          <div className="container mx-auto px-5 lg:px-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-5">
                <div className="flex w-full rounded-tr-[50px]">
@@ -26,11 +26,11 @@ const AboutUs = () => {
                      viewport={{ once: true }}
 
                   >
-                     <h2 className='fontStyle text-[34px] sm:text-[44px] sm:leading-[50px] lg:text-[54px]'>Our Patient</h2>
-                     <h2 className='fontStyle text-[34px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] text-[#0014FF]'>About US</h2>
+                     <h2 className='fontStyle text-[34px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] dark:text-slate-50'>Our Patient</h2>
+                     <h2 className='fontStyle text-[34px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] text-[#0014FF] dark:text-yellow-400'>About US</h2>
                   </motion.div>
                   <div className='h-20 py-[20px] mb-20 lg:mb-0'>
-                     <p className='text-sm sm:pt-5 lg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure debitis asperiores, itaque a exercitationem maxime, eius voluptas quae expedita sit alias, eos pariatur illum!</p>
+                     <p className='text-sm sm:pt-5 lg:text-lg dark:text-slate-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure debitis asperiores, itaque a exercitationem maxime, eius voluptas quae expedita sit alias, eos pariatur illum!</p>
                   </div>
                   <div className="h-[400px] mx-auto mt-10 w-[750px] hidden lg:block">
                      <MySwiper />

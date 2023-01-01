@@ -35,23 +35,23 @@ const Blog = () => {
                </div>
                <div className='lg:pl-10'>
                   <div className='hidden lg:block'>
-                     <h2 className='text-2xl text-blue-800 font-bold'>Categories</h2>
+                     <h2 className='text-2xl text-blue-800 font-bold dark:text-slate-100'>Categories</h2>
                      <ul className='mt-5'>
-                        <li className='text-slate-700 text-lg leading-8'>Dental Clinic</li>
-                        <li className='text-slate-700 text-lg leading-8'>Our Specialist</li>
-                        <li className='text-slate-700 text-lg leading-8'>Medical Consultation</li>
-                        <li className='text-slate-700 text-lg leading-8'>World Dental News</li>
+                        <li className='text-slate-700 text-lg leading-8 dark:text-slate-300'>Dental Clinic</li>
+                        <li className='text-slate-700 text-lg leading-8 dark:text-slate-300'>Our Specialist</li>
+                        <li className='text-slate-700 text-lg leading-8 dark:text-slate-300'>Medical Consultation</li>
+                        <li className='text-slate-700 text-lg leading-8 dark:text-slate-300'>World Dental News</li>
                      </ul>
                   </div>
                   <div className="my-5 hidden lg:block">
 
-                     <h2 className='text-2xl text-blue-800 font-bold'>Latest Posts</h2>
+                     <h2 className='text-2xl text-blue-800 font-bold dark:text-slate-100'>Latest Posts</h2>
                      <PostItem fontSize="24px" post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
                      <PostItem fontSize="24px" post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
                      <PostItem fontSize="24px" post="Teeth: Names, types, and functions" date="August-12-2023 | No Comments" />
                   </div>
                   <div>
-                     <h2 className='text-2xl text-blue-800 font-bold'>Tag</h2>
+                     <h2 className='text-2xl text-blue-800 font-bold dark:text-slate-100'>Tag</h2>
                      <Tag tag="Blog" />
                      <Tag tag="New post" />
                      <Tag tag="New post" />

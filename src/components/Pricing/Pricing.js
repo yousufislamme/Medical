@@ -17,19 +17,19 @@ const Pricing = () => {
    }
 
    return (
-      <div className='container mx-auto px-5 lg:px-20 py-32 bg-slate-100'>
+      <div className='container mx-auto px-5 lg:px-20 py-32 bg-slate-100 dark:bg-slate-900'>
          <div className='text-center'>
             <motion.h2
                initial={{ y: 50, opacity: 0 }}
                whileInView={{ y: 0, opacity: 1 }}
                transition={{ ease: "anticipate", delay: 0.1, duration: 1 }}
-               className='fontStyle leading-9 lg:leading-[60px] text-[32px] lg:text-[54px] text-[#0014FF]'>Dentino Clinic</motion.h2>
+               className='fontStyle leading-9 lg:leading-[60px] text-[32px] lg:text-[54px] text-[#0014FF] dark:text-yellow-400 '>Dentino Clinic</motion.h2>
             <motion.h2
                initial={{ y: 50, opacity: 0 }}
                whileInView={{ y: 0, opacity: 1 }}
                transition={{ ease: "anticipate", delay: 0.2, duration: 2 }}
 
-               className='fontStyle leading-9 lg:leading-[60px] text-[32px] lg:text-[54px]'>Pricing Plans</motion.h2>
+               className='fontStyle leading-9 lg:leading-[60px] text-[32px] lg:text-[54px] dark:text-slate-50'>Pricing Plans</motion.h2>
          </div>
          <div className='grid grid-cols-1 lg:grid-cols-3 mt-20 w-full xl:w-[80%] mx-auto'>
 

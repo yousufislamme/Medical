@@ -2,7 +2,7 @@ import React from 'react'
 
 const Produces = () => {
    return (
-      <div className='container mx-auto px-5 lg:px-20 pt-20'>
+      <div className='container mx-auto px-5 lg:px-20 pt-20 xl:dark:pb-20'>
          <div className="bg-blue-700 p-5 lg:p-14 rounded-tr-[50px] rounded-bl-[50px]">
 
             <div className="text-center lg:text-left">

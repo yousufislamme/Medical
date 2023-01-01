@@ -11,7 +11,7 @@ const Service = () => {
    return (
       <>
          <Navbar />
-         <div className='container mx-auto px-5 lg:px-20 py-20 bg-white overflow-hidden'>
+         <div className='container mx-auto px-5 lg:px-20 py-20 bg-white overflow-hidden dark:bg-slate-900'>
 
             <motion.div
                initial={{ y: -200 }}

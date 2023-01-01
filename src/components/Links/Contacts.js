@@ -26,10 +26,10 @@ const Contacts = () => {
 
             <div className='grid grid-cols-1 lg:grid-cols-2 lg:pb-20'>
                <div>
-                  <h2 className='text-[34px] font-semibold'>Send us a letter</h2>
+                  <h2 className='text-[34px] font-semibold dark:text-slate-100'>Send us a letter</h2>
                   <div className='py-10'>
 
-                     <form action="">
+                     <form action="" className='dark:text-slate-50'>
                         <input type="text" placeholder="Full Name" className="input border-blue-700 input-info outline-none w-[40%] mr-6 focus:outline-none focus:ring focus:ring-blue-700" />
 
                         <input type="text" placeholder="E-mail" required className="input border-blue-700 input-info w-[40%] focus:outline-none focus:ring focus:ring-blue-700" />
@@ -45,15 +45,15 @@ const Contacts = () => {
                </div>
 
                <div className='py-10'>
-                  <p className='text-lg'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nesciunt, excepturi maiores dolor laborum nulla corporis qui quis facilis pariatur soluta, asperiores quo autem.</p>
+                  <p className='text-lg dark:text-slate-100'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nesciunt, excepturi maiores dolor laborum nulla corporis qui quis facilis pariatur soluta, asperiores quo autem.</p>
                   <br />
-                  <p className='text-gray-400'>Work Time</p>
-                  <h4 className='font-semibold'>Mon-Fri: 8 AM-8PM</h4>
+                  <p className='text-gray-400 dark:text-slate-200'>Work Time</p>
+                  <h4 className='font-semibold dark:text-slate-100'>Mon-Fri: 8 AM-8PM</h4>
                   <br />
-                  <p className='text-gray-400 mt-5'>Phone</p>
-                  <a href="tel: +123 4567 8999" className='font-semibold'>+123 4567 8999</a>
-                  <p className='text-gray-400 mt-5'>Address</p>
-                  <h4 className='font-semibold'>Bangladesh, Dhaka</h4>
+                  <p className='text-gray-400 mt-5 dark:text-slate-200'>Phone</p>
+                  <a href="tel: +123 4567 8999" className='font-semibold dark:text-slate-100'>+123 4567 8999</a>
+                  <p className='text-gray-400 mt-5 dark:text-slate-200'>Address</p>
+                  <h4 className='font-semibold dark:text-slate-100'>Bangladesh, Dhaka</h4>
                </div>
                <div>
 

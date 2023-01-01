@@ -6,7 +6,7 @@ import DoctorPhoto from './../../img/doctorPhoto.png'
 const Clinic = () => {
    return (
 
-      <div>
+      <div className='dark:bg-slate-800 xl:dark:py-20'>
          <div className="container px-5 lg:px-20 mx-auto">
             <motion.div
                initial={{ y: 50 }}
@@ -15,8 +15,8 @@ const Clinic = () => {
                viewport={{ once: true }}
 
                className=' text-center mb-[50px]'>
-               <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-[#0014FF] fontStyle'>Dention</h2>
-               <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-slate-700 fontStyle'>Profession Clinic</h2>
+               <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-[#0014FF] fontStyle dark:text-yellow-400'>Dention</h2>
+               <h2 className='font-extrabold text-[32px] sm:text-[44px] sm:leading-[50px] lg:text-[54px] leading-9 lg:leading-[60px] text-slate-700 fontStyle dark:text-slate-50'>Profession Clinic</h2>
             </motion.div>
             <div className='flex flex-col-reverse lg:flex-row'>
                <div className='w-[100%] lg:w-[40%] flex flex-col items-start justify-center'>
@@ -26,13 +26,13 @@ const Clinic = () => {
                      transition={{ ease: "anticipate", duration: 1 }}
                      viewport={{ once: true }}
 
-                     className='text-[28px] font-semibold lg:pr-10'>Caring Health is Important Than All</motion.h2>
+                     className='text-[28px] font-semibold lg:pr-10 dark:text-slate-200'>Caring Health is Important Than All</motion.h2>
                   <motion.p
                      initial={{ y: 20, opacity: 0 }}
                      whileInView={{ y: 1, opacity: 1 }}
                      transition={{ ease: "anticipate", duration: 2 }}
                      viewport={{ once: true }}
-                     className='my-5 lg:pr-10 text-slate-700 text-sm leading-6 lg:text-[22px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit non quisquam provident sapiente omnis nostrum, animi assumenda, fugiat numquam aperiam veniam doloribus, similique minima saepe.</motion.p>
+                     className='my-5 lg:pr-10 text-slate-700 text-sm leading-6 lg:text-[22px] dark:text-slate-400'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit non quisquam provident sapiente omnis nostrum, animi assumenda, fugiat numquam aperiam veniam doloribus, similique minima saepe.</motion.p>
                   <a href="#">
                      <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_11_13)">

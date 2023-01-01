@@ -32,14 +32,14 @@ const About = () => {
                </div>
 
                <div className='text-left mt-5 lg:mt-0'>
-                  <h2 className='fontStyle text-[32px] leading-[50px] lg:text-[54px] lg:leading-[60px] pb-10'>Caring Health is Important Than All</h2>
-                  <p className='text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore nam, ullam ratione vel minima quos repellat iusto perspiciatis quas qui eaque, alias delectus nihil.</p>
-                  <p className='text-lg py-5 font-semibold'>Lorem ipsum dolor sit amet consectetur.</p>
-                  <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, veniam!</p>
+                  <h2 className='fontStyle text-[32px] leading-[50px] lg:text-[54px] lg:leading-[60px] pb-10 dark:text-slate-50'>Caring Health is Important Than All</h2>
+                  <p className='text-lg dark:text-slate-200'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore nam, ullam ratione vel minima quos repellat iusto perspiciatis quas qui eaque, alias delectus nihil.</p>
+                  <p className='text-lg py-5 font-semibold dark:text-slate-200'>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p className='text-lg dark:text-slate-200'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, veniam!</p>
 
                   <div className='hidden lg:inline-block bg-white/30 backdrop-blur-sm shadow-xl px-5 py-3 rounded-tl-[20px] rounded-br-[20px] ml-[-70px] mt-10 animate-easyAni'>
-                     <span className='block text-xl font-bold z-10'>Phone</span>
-                     <a className='text-lg'>+123 4566 7899</a>
+                     <span className='block text-xl font-bold z-10 dark:text-slate-50 '>Phone</span>
+                     <a className='text-lg dark:text-slate-100'>+123 4566 7899</a>
                   </div>
                </div>
 
@@ -53,7 +53,7 @@ const About = () => {
 
          <div className="container mx-auto px-5 lg:px-20 py-20">
             <div>
-               <h2 className='fontStyle text-[32px] lg:text-[54px] lg:leading-[60px]'>Latest Dental <br />
+               <h2 className='fontStyle text-[32px] lg:text-[54px] lg:leading-[60px] dark:text-slate-50'>Latest Dental <br />
                   News</h2>
             </div>
 
@@ -76,19 +76,19 @@ const About = () => {
                </div>
                <div>
                   <div className='border-2 mb-5 p-5 border-blue-300'>
-                     <h3 className='font-bold text-2xl'>Lorem ipsum dolor sit amet.</h3>
-                     <p className="font-semibold text-blue-700"> August 15, 2022 | No Comments</p>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut iure assumenda rerum libero culpa, id ea ducimus nulla hic?</p>
+                     <h3 className='font-bold text-2xl dark:text-slate-100'>Lorem ipsum dolor sit amet.</h3>
+                     <p className="font-semibold text-blue-700 dark:text-blue-700"> August 15, 2022 | No Comments</p>
+                     <p className="dark:text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut iure assumenda rerum libero culpa, id ea ducimus nulla hic?</p>
                   </div>
                   <div className='border-2 mb-5 p-5 border-blue-300'>
-                     <h3 className='font-bold text-2xl'>Lorem ipsum dolor sit amet.</h3>
-                     <p className="font-semibold text-blue-700"> August 15, 2022 | No Comments</p>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut iure assumenda rerum libero culpa, id ea ducimus nulla hic?</p>
+                     <h3 className='font-bold text-2xl dark:text-slate-100'>Lorem ipsum dolor sit amet.</h3>
+                     <p className="font-semibold text-blue-700 dark:text-blue-700"> August 15, 2022 | No Comments</p>
+                     <p className="dark:text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut iure assumenda rerum libero culpa, id ea ducimus nulla hic?</p>
                   </div>
                   <div className='border-2 mb-5 p-5 border-blue-300'>
-                     <h3 className='font-bold text-2xl'>Lorem ipsum dolor sit amet.</h3>
-                     <p className="font-semibold text-blue-700"> August 15, 2022 | No Comments</p>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut iure assumenda rerum libero culpa, id ea ducimus nulla hic?</p>
+                     <h3 className='font-bold text-2xl dark:text-slate-100'>Lorem ipsum dolor sit amet.</h3>
+                     <p className="font-semibold text-blue-700 dark:text-blue-700"> August 15, 2022 | No Comments</p>
+                     <p className="dark:text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut iure assumenda rerum libero culpa, id ea ducimus nulla hic?</p>
                   </div>
                </div>
             </div>

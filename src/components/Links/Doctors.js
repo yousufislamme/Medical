@@ -10,7 +10,7 @@ const Doctors = () => {
    return (
       <>
          <Navbar />
-         <div className="container mx-auto px-5 lg:px-20 py-20 overflow-hidden">
+         <div className="container mx-auto px-5 lg:px-20 py-20 overflow-hidden pb-20">
 
 
             <motion.div

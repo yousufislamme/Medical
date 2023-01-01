@@ -10,9 +10,9 @@ const BlogItem = (props) => {
 
                <img className="object-cover" src={img} alt="images" />
             </div>
-            <h3 className='font-bold text-2xl'>{title}</h3>
-            <p className="font-semibold text-blue-700">{date}</p>
-            <p>{desc}</p>
+            <h3 className='font-bold text-2xl dark:text-slate-200'>{title}</h3>
+            <p className="font-semibold text-blue-700 dark:text-slate-200">{date}</p>
+            <p className='dark:text-slate-400'>{desc}</p>
          </div>
       </>
    )
