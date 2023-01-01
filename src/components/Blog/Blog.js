@@ -12,16 +12,16 @@ const Blog = () => {
 
    return (
 
-      <>
+      <div className='overflow-hidden'>
          <Navbar />
-         <div className="container mx-auto px-5 py-5 lg:p-20 overflow-hidden">
+         <div className="container mx-auto px-5 py-5 lg:p-20">
             <motion.div
                initial={{ y: -200 }}
                whileInView={{ y: 1 }}
                transition={{ easy: "anticipate", duration: 1 }}
                viewport={{ once: true }}
             >
-               <TitleDesc title='Archive' desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
+               <TitleDesc title="Blog" desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci assumenda, minus repellendus, itaque hic, deserunt alias quibusdam corporis deleniti atque a vel earum provident quam." />
             </motion.div>
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-20'>
@@ -63,7 +63,7 @@ const Blog = () => {
             </div>
          </div>
          <Footer />
-      </>
+      </div>
    )
 }
 
