@@ -36,7 +36,7 @@ export default function Hero() {
 
                   <div className='mt-20 flex flex-col sm:flex-row lg:flex-row gap-7'>
                      {/* box */}
-                     <div className='border-2 rounded-tl-[20px] rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
+                     <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
                         <h3 className='text-[18px] lg:text-[22px] font-semibold'>Our Service</h3>
                         <p className='mt-'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                         <div className='absolute bottom-[]'>
@@ -57,8 +57,8 @@ export default function Hero() {
                      </div>
 
                      {/* box */}
-                     <div className='border-2 rounded-tl-[20px] rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
-                        <h3 className='text-[18px] lg:text-[22px] font-semibold'>Our Service</h3>
+                     <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
+                        <h3 className='text-[18px] lg:text-[22px] font-semibold'>Our Center</h3>
                         <p className='mt-'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                         <div className='absolute bottom-[]'>
                            <div className='flex justify-center items-center w-[40px] h-[40px] rounded-full bg-[#0014FF] mt-2'>
