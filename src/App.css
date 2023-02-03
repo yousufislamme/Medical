@@ -1,3 +1,7 @@
 .active-link {
    background: red;
 }
+
+.scroll-to-top svg {
+   display: inline-block;
+}

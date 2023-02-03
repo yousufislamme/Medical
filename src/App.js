@@ -7,6 +7,7 @@ import Contacts from './components/Links/Contacts';
 import About from './components/Links/About';
 import Blog from './components/Blog/Blog';
 import SinglePost from './components/Blog/SinglePost';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 function App() {
@@ -22,6 +23,15 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/singlePost' element={<SinglePost />} />
       </Routes>
+
+
+      <ScrollToTop
+        color="#0014FF"
+        smooth
+        viewBox="0 0 24 24"
+        svgPath="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"
+
+      />
     </>
   );
 }

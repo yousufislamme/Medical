@@ -39,7 +39,7 @@ export default function Hero() {
                      <div className='border-2 rounded-tl-[20px] backdrop-blur-sm bg-white/30  dark:bg-black/30 rounded-br-[20px] drop-shadow-xl mx-5 px-5 py-7 relatives'>
                         <h3 className='text-[18px] lg:text-[22px] font-semibold dark:text-slate-200'>Our Service</h3>
                         <p className='dark:text-slate-300'>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                        <div className='absolute bottom-[]'>
+                        <div className='absolute'>
                            <div className='flex justify-center items-center w-[40px] h-[40px] rounded-full bg-[#0014FF] mt-2'>
                               <svg width="249" height="249" viewBox="0 0 249 249" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <g clip-path="url(#clip0_8_6)">
@@ -90,6 +90,8 @@ export default function Hero() {
                </div>
             </div>
          </div>
+
+
       </div>
 
    )
