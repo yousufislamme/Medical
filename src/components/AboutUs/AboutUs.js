@@ -12,8 +12,8 @@ const AboutUs = () => {
          <div className="container mx-auto px-5 lg:px-20 overflow-hidden">
             <div className="flex flex-col lg:flex-row gap-5">
                <div className="flex w-full rounded-tr-[50px]">
-
-                  <div className="w-[400px] h-[500px] bg-[#0014FF] rounded-tr-[50px] hidden lg:block">
+                  {/* bg-[#0014FF] */}
+                  <div className="w-[400px] h-[500px] pt-5 pl-5 bg-gradient-to-b from-pink-200 to-blue-300 rounded-tr-[50px] hidden lg:block">
                      <img className='w-full h-full object-cover' src={Sui} alt="" />
                   </div>
 
